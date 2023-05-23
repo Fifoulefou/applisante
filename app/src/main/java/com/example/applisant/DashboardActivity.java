@@ -105,7 +105,7 @@ public class DashboardActivity extends AppCompatActivity {
         // Logique pour calculer le pourcentage de graisse corporelle
         // en fonction du genre, de la taille et du poids
 
-        // Exemple de calcul simple (à adapter selon vos besoins)
+        // Exemple de calcul
         if (gender.equals("Homme")) {
             // Calcul pour les hommes
             return (1.2 * (weight / (height * height))) - (10.8 * 1) - 5.4;
