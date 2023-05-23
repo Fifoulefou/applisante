@@ -31,6 +31,7 @@ public class NextActivity extends AppCompatActivity {
                     Toast.makeText(NextActivity.this, "Veuillez entrer une durée de sommeil", Toast.LENGTH_SHORT).show();
                 }
             }
+
         });
     }
 }

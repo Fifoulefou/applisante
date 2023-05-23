@@ -24,6 +24,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
+            android:hint="Entrez le nombre d'heures de sommeil"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sleep_label" />
@@ -34,13 +35,15 @@
             android:layout_height="wrap_content"
             android:text="Taille (cm):"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sleep_input" />
+            app:layout_constraintTop_toBottomOf="@+id/sleep_input"
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/height_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
+            android:hint="Entrez votre taille (cm)"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/height_label" />
@@ -51,13 +54,15 @@
             android:layout_height="wrap_content"
             android:text="Poids (kg):"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/height_input" />
+            app:layout_constraintTop_toBottomOf="@+id/height_input"
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/weight_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
+            android:hint="Entrez le poids en kilogrammes"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/weight_label" />
@@ -68,16 +73,75 @@
             android:layout_height="wrap_content"
             android:text="Quantité d'eau consommée (L):"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/weight_input" />
+            app:layout_constraintTop_toBottomOf="@+id/weight_input"
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/water_input"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
+            android:hint="Entrez la quantité d'eau consommée (L)"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/water_label" />
+
+        <TextView
+            android:id="@+id/steps_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de pas:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/water_input"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/steps_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Entrez le nombre de pas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/steps_label" />
+
+        <TextView
+            android:id="@+id/age_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Âge:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/steps_input"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/age_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Entrez votre âge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age_label" />
+
+        <TextView
+            android:id="@+id/gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age_input"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_label" />
+
         <Button
             android:id="@+id/submit_button"
             android:layout_width="wrap_content"
@@ -85,7 +149,18 @@
             android:text="Soumettre"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_spinner"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/steps_advice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="4dp"
+            android:text="Ex: 5 000"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/water_input" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
